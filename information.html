@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Course schedule, fees and an introduction video for BrightPath International Academy.">
+  <title>BrightPath International Academy | Courses &amp; Fees</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <!-- Page 2 uses EMBEDDED CSS only (this <style> element). No style attributes and no stylesheet link. -->
+  <style>
+    /* ELEMENT SELECTOR: the rules below style every <body>, <p>, <h2>, <table>, <th> and <td> on this page */
+    body { margin:0; font-family:'Segoe UI',Tahoma,Arial,sans-serif; font-size:17px; line-height:1.7; color:#1f1a33; background-color:#f6f4fb; }
+    p { margin:0 0 12px; }
+    header { background-color:#ffffff; padding:16px 24px; display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:16px; border-top:6px solid #200860; }
+    header img { display:block; width:72px; height:72px; }
+    header h1 { margin:0; font-family:Georgia,'Times New Roman',serif; font-size:1.9rem; color:#200860; line-height:1.2; }
+    header p { margin:2px 0 0; color:#8a6d1f; font-weight:600; }
+    nav { background-color:#200860; text-align:center; border-bottom:4px solid #c8a850; }
+    nav a { display:inline-block; color:#ffffff; text-decoration:none; font-weight:600; padding:14px 22px; border-bottom:4px solid transparent; }
+    nav a:hover, nav a[aria-current="page"] { background-color:#180060; border-bottom-color:#c8a850; }
+    h2 { font-family:Georgia,'Times New Roman',serif; color:#200860; font-size:1.8rem; line-height:1.25; margin:0 0 14px; border-left:6px solid #c8a850; padding-left:12px; }
+    footer { background-color:#200860; color:#d9d3ee; text-align:center; padding:26px 20px; font-size:0.95rem; border-top:5px solid #c8a850; }
+    footer p { margin:0 0 4px; }
+    footer a { color:#c8a850; }
+    h3 { color:#200860; margin:0 0 8px; font-size:1.2rem; }
+    main { max-width:1040px; margin:0 auto; padding:36px 24px; }
+    .layout { display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-bottom:36px; }
+    /* ID SELECTOR: styles the one article with id="course-article" */
+    #course-article { flex:2 1 520px; background-color:#ffffff; border:1px solid #ded8ee; border-top:6px solid #c8a850; border-radius:12px; padding:28px; box-shadow:0 2px 10px rgba(32,8,96,0.07); }
+    aside { flex:1 1 260px; }
+    /* CLASS SELECTOR: .notice and .tip style the announcement and tip boxes in the aside */
+    .notice { background-color:#fbf3d9; border:2px solid #c8a850; border-radius:12px; padding:18px 20px; margin-bottom:18px; }
+    .tip { background-color:#e8f0fa; border-left:6px solid #98c0e8; border-radius:6px; padding:16px 18px; }
+    .block { margin-bottom:36px; }
+    .media-card { background-color:#ffffff; border:1px solid #ded8ee; border-radius:12px; padding:20px; margin-bottom:20px; }
+    video, audio { display:block; width:100%; max-width:720px; }
+    video { border-radius:8px; background-color:#000; height:auto; }
+    table { width:100%; border-collapse:collapse; background-color:#ffffff; }
+    caption { caption-side:top; text-align:left; font-weight:700; font-size:1.1rem; color:#200860; padding:0 0 10px; }
+    th, td { border:2px solid #200860; padding:12px 14px; text-align:left; }
+    th { background-color:#200860; color:#ffffff; }
+    tbody tr:nth-child(even) { background-color:#f0ecfa; }
+    /* ATTRIBUTE SELECTOR: links whose href ends in ".html" inside the article turn gold and bold */
+    article a[href$=".html"] { color:#8a6d1f; font-weight:700; }
+    @media (max-width:600px) { th, td { padding:8px; font-size:0.9rem; } header h1 { font-size:1.5rem; } nav a { padding:12px 14px; } }
+  </style>
+</head>
+<body>
+
+  <!-- Site header: logo and website title -->
+  <header>
+    <img src="images/logo.png" width="72" height="72" alt="BrightPath International Academy logo: a shield with a rising sun over an open book">
+    <div>
+      <h1>BrightPath International Academy</h1>
+      <p>Course schedule, fees and introduction</p>
+    </div>
+  </header>
+
+  <!-- Main navigation: links to all three pages -->
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="information.html" aria-current="page">Courses &amp; Fees</a>
+    <a href="registration.html">Register</a>
+  </nav>
+
+  <main>
+    <div class="layout">
+
+      <!-- Article: a self-contained description of one course -->
+      <article id="course-article">
+        <h2>Featured course: Web Development Foundations</h2>
+        <p>This 12-week course takes complete beginners from a blank file to a published, responsive website. Students learn semantic HTML, CSS layout, forms and the basics of JavaScript, then finish by building a personal portfolio site.</p>
+        <h3>What you will learn</h3>
+        <p>Page structure, typography, colour, flexbox, accessibility and publishing with GitHub Pages. Each week has a live lab session and a small graded task.</p>
+        <h3>Who it is for</h3>
+        <p>School leavers, university students and career changers. No previous coding experience is needed. Ready to start? <a href="registration.html">Go to the registration form</a> or return to the <a href="index.html">home page</a>.</p>
+      </article>
+
+      <!-- Aside: related announcement and tip -->
+      <aside>
+        <div class="notice">
+          <h3>Announcement</h3>
+          <p>The new batch starts on <strong>3 November 2026</strong>. Register by 25 October for 10% off the course fee.</p>
+        </div>
+        <div class="tip">
+          <h3>Useful tip</h3>
+          <p>Bring your own laptop if you can. Lab computers are available for students who do not have one.</p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Table: course schedule and fees -->
+    <section class="block">
+      <h2>Course schedule and fees</h2>
+      <table>
+        <caption>Upcoming courses, timings and fees (PKR)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Course</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Schedule</th>
+            <th scope="col">Fee (PKR)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Web Development</th><td>12 weeks</td><td>Mon, Wed, Fri, 5-7 pm</td><td>28,000</td></tr>
+          <tr><th scope="row">Python Programming</th><td>10 weeks</td><td>Tue, Thu, 6-8 pm</td><td>24,000</td></tr>
+          <tr><th scope="row">Graphic Design</th><td>8 weeks</td><td>Sat, Sun, 10 am-1 pm</td><td>20,000</td></tr>
+          <tr><th scope="row">Digital Marketing</th><td>8 weeks</td><td>Mon, Wed, 6-8 pm</td><td>18,000</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Multimedia: video and audio, both with controls and fallback text -->
+    <section class="block">
+      <h2>Meet the academy</h2>
+      <div class="media-card">
+        <h3>Video: Academy introduction (35 seconds)</h3>
+        <video controls width="1280" height="720" preload="metadata" poster="images/video-poster.jpg">
+          <source src="media/academy-intro.mp4" type="video/mp4">
+          <source src="media/academy-intro.webm" type="video/webm">
+          Your browser does not support the video element. You can <a href="media/academy-intro.mp4">download the introduction video</a> instead.
+        </video>
+      </div>
+      <div class="media-card">
+        <h3>Audio: Academy theme music</h3>
+        <audio controls preload="metadata">
+          <source src="media/academy-theme.mp3" type="audio/mpeg">
+          Your browser does not support the audio element. You can <a href="media/academy-theme.mp3">download the theme music</a> instead.
+        </audio>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>BrightPath International Academy, 24 Canal Road, Lahore, Pakistan</p>
+    <p>Phone: 0300-0000000 | Email: <a href="mailto:info@brightpath.example">info@brightpath.example</a></p>
+    <p><small>&copy; 2026 BrightPath International Academy. All rights reserved.</small></p>
+  </footer>
+
+</body>
+</html>

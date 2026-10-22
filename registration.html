@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Register for a course at BrightPath International Academy.">
+  <title>BrightPath International Academy | Student Registration</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <!-- Page 3 uses EXTERNAL CSS only: the separate file style.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Site header: logo and website title -->
+  <header>
+    <img src="images/logo.png" width="72" height="72" alt="BrightPath International Academy logo: a shield with a rising sun over an open book">
+    <div>
+      <h1>BrightPath International Academy</h1>
+      <p>Student registration</p>
+    </div>
+  </header>
+
+  <!-- Main navigation: links to all three pages -->
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="information.html">Courses &amp; Fees</a>
+    <a href="registration.html" aria-current="page">Register</a>
+  </nav>
+
+  <main>
+    <h2>Reserve your seat</h2>
+    <p class="intro">Fill in the form to register for the next batch. Fields marked with * are required. This is a demonstration form, so nothing is sent to a server.</p>
+
+    <!-- Registration form: every control has a label, a unique id and a name -->
+    <form id="registration-form" action="#" method="get">
+
+      <!-- Group 1: account details (shows the password field) -->
+      <fieldset>
+        <legend>Create your account</legend>
+        <label for="fullname">Full Name *</label>
+        <input type="text" id="fullname" name="fullname" placeholder="e.g. Ayesha Khan" required>
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+        <label for="password">Password * (at least 8 characters)</label>
+        <input type="password" id="password" name="password" minlength="8" placeholder="Minimum 8 characters" required>
+      </fieldset>
+
+      <!-- Group 2: personal details -->
+      <fieldset>
+        <legend>Personal details</legend>
+        <label for="age">Age (16 to 60)</label>
+        <input type="number" id="age" name="age" min="16" max="60" placeholder="e.g. 20">
+
+        <label for="startdate">Preferred Start Date</label>
+        <input type="date" id="startdate" name="startdate">
+
+        <p class="group-label" id="mode-label">Preferred class mode</p>
+        <div class="choices" role="radiogroup" aria-labelledby="mode-label">
+          <label class="inline" for="mode-campus"><input type="radio" id="mode-campus" name="mode" value="campus" checked> On campus</label>
+          <label class="inline" for="mode-online"><input type="radio" id="mode-online" name="mode" value="online"> Online</label>
+        </div>
+      </fieldset>
+
+      <!-- Group 3: course choices -->
+      <fieldset>
+        <legend>Course choices</legend>
+        <label for="course">Course *</label>
+        <select id="course" name="course" required>
+          <option value="" selected disabled>Select a course</option>
+          <option value="web">Web Development</option>
+          <option value="python">Python Programming</option>
+          <option value="design">Graphic Design</option>
+          <option value="marketing">Digital Marketing</option>
+        </select>
+
+        <p class="group-label" id="extras-label">Extras (select any)</p>
+        <div class="choices" role="group" aria-labelledby="extras-label">
+          <label class="inline" for="extra-laptop"><input type="checkbox" id="extra-laptop" name="extras" value="lab-laptop"> Lab laptop</label>
+          <label class="inline" for="extra-materials"><input type="checkbox" id="extra-materials" name="extras" value="printed-materials"> Printed materials</label>
+          <label class="inline" for="extra-newsletter"><input type="checkbox" id="extra-newsletter" name="extras" value="newsletter"> Course updates by email</label>
+        </div>
+
+        <label for="comments">Additional information</label>
+        <textarea id="comments" name="comments" rows="4" maxlength="300" placeholder="Tell us about your goals (max 300 characters)"></textarea>
+      </fieldset>
+
+      <!-- Form buttons -->
+      <div class="actions">
+        <button type="submit">Submit registration</button>
+        <button type="reset" class="secondary">Reset form</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>BrightPath International Academy, 24 Canal Road, Lahore, Pakistan</p>
+    <p>Phone: 0300-0000000 | Email: <a href="mailto:info@brightpath.example">info@brightpath.example</a></p>
+    <p><small>&copy; 2026 BrightPath International Academy. All rights reserved.</small></p>
+  </footer>
+
+</body>
+</html>

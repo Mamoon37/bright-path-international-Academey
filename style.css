@@ -1,0 +1,50 @@
+/* style.css - external stylesheet for registration.html (BrightPath International Academy) */
+
+/* ELEMENT SELECTOR: the rules below style every <body>, <p>, <h2>, <label>, <input>, <select>, <textarea> and <button> */
+body { margin:0; font-family:'Segoe UI',Tahoma,Arial,sans-serif; font-size:17px; line-height:1.7; color:#1f1a33; background-color:#f6f4fb; }
+p { margin:0 0 12px; }
+header { background-color:#ffffff; padding:16px 24px; display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:16px; border-top:6px solid #200860; }
+header img { display:block; width:72px; height:72px; }
+header h1 { margin:0; font-family:Georgia,'Times New Roman',serif; font-size:1.9rem; color:#200860; line-height:1.2; }
+header p { margin:2px 0 0; color:#8a6d1f; font-weight:600; }
+nav { background-color:#200860; text-align:center; border-bottom:4px solid #c8a850; }
+nav a { display:inline-block; color:#ffffff; text-decoration:none; font-weight:600; padding:14px 22px; border-bottom:4px solid transparent; }
+nav a:hover, nav a[aria-current="page"] { background-color:#180060; border-bottom-color:#c8a850; }
+h2 { font-family:Georgia,'Times New Roman',serif; color:#200860; font-size:1.8rem; line-height:1.25; margin:0 0 14px; border-left:6px solid #c8a850; padding-left:12px; }
+footer { background-color:#200860; color:#d9d3ee; text-align:center; padding:26px 20px; font-size:0.95rem; border-top:5px solid #c8a850; }
+footer p { margin:0 0 4px; }
+footer a { color:#c8a850; }
+
+main { max-width:780px; margin:0 auto; padding:36px 24px; }
+
+/* CLASS SELECTOR: .intro highlights the introduction paragraph */
+.intro { background-color:#fbf3d9; border-left:6px solid #c8a850; padding:12px 16px; border-radius:6px; }
+
+/* ID SELECTOR: the registration form card */
+#registration-form { background-color:#ffffff; border:1px solid #ded8ee; border-radius:12px; padding:26px; box-shadow:0 2px 10px rgba(32,8,96,0.07); }
+
+fieldset { border:2px solid #200860; border-radius:10px; margin:0 0 24px; padding:16px 22px 22px; }
+legend { font-family:Georgia,'Times New Roman',serif; font-weight:700; color:#ffffff; background-color:#200860; padding:5px 16px; border-radius:20px; }
+label { display:block; font-weight:600; margin:14px 0 6px; color:#200860; }
+label.inline { display:inline-flex; align-items:center; gap:8px; font-weight:400; margin:6px 22px 6px 0; color:#1f1a33; }
+.group-label { font-weight:600; color:#200860; margin:16px 0 4px; }
+
+input, select, textarea { width:100%; box-sizing:border-box; padding:11px 12px; font:inherit; color:#1f1a33; border:1px solid #9a93b8; border-radius:6px; background-color:#ffffff; }
+input[type="radio"], input[type="checkbox"] { width:auto; accent-color:#200860; transform:scale(1.2); }
+textarea { resize:vertical; }
+
+/* ATTRIBUTE SELECTOR: the email input gets a gold border and a tinted background */
+input[type="email"] { border:2px solid #c8a850; background-color:#fffcf2; }
+
+/* FOCUS feedback on form controls */
+input:focus, select:focus, textarea:focus { outline:none; border-color:#200860; box-shadow:0 0 0 4px rgba(152,192,232,0.65); background-color:#f4f9ff; }
+
+.actions { display:flex; flex-wrap:wrap; gap:12px; }
+button { padding:12px 28px; font:inherit; font-weight:700; color:#200860; background-color:#c8a850; border:2px solid #c8a850; border-radius:6px; cursor:pointer; }
+/* HOVER feedback on buttons */
+button:hover { background-color:#200860; border-color:#200860; color:#ffffff; }
+button:focus-visible { outline:3px solid #98c0e8; outline-offset:2px; }
+button.secondary { background-color:#ffffff; color:#200860; border-color:#200860; }
+button.secondary:hover { background-color:#200860; color:#ffffff; }
+
+@media (max-width:600px) { header h1 { font-size:1.5rem; } nav a { padding:12px 14px; } }
